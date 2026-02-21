@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "MBO_navipark_テスト実装.md",
+                "file": "TODOリスト.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "MBO_navipark_テスト実装"
+              "title": "TODOリスト"
             }
           }
         ]
@@ -94,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "MBO_navipark_テスト実装.md",
+                "file": "TODOリスト.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +104,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "MBO_navipark_テスト実装へのバックリンク"
+              "title": "TODOリストへのバックリンク"
             }
           },
           {
@@ -156,21 +156,21 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "MBO_navipark_テスト実装.md",
+                "file": "TODOリスト.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "MBO_navipark_テスト実装のアウトライン"
+              "title": "TODOリストのアウトライン"
             }
           }
-        ]
+        ],
+        "currentTab": 4
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -180,13 +180,21 @@
       "daily-notes:今日のデイリーノートを開く": false,
       "templates:テンプレートを挿入": false,
       "command-palette:コマンドパレットを開く": false,
-      "bases:Create new base": false
+      "bases:Create new base": false,
+      "terminal:Open terminal": false
     }
   },
   "active": "d39bf06c09615fb1",
   "lastOpenFiles": [
-    "無題のファイル.md",
-    "MBO_navipark_テスト実装.md",
+    "MBO_テスト実装.md",
+    "MBO_時間管理_最終報告.md",
+    "MBO_テスト実装_最終報告.md",
+    "MBO_定量：予定時間を20%以上超過したタスクを半期で10%以内抑える.md",
+    "MBO_ルール設計のノウハウ共有.md",
+    "ナビパーク改善提案.md",
+    "TODOリスト.md",
+    "MBO26年3月半期 ナビパークテスト導入の成果レポート.md",
+    "1on2_26年2月末.md",
     "2026-02-20.md"
   ]
 }
