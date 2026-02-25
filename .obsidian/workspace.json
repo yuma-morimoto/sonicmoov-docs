@@ -8,17 +8,17 @@
         "type": "tabs",
         "children": [
           {
-            "id": "90d8a247c8992046",
+            "id": "89d710b53f715adf",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "MBO_テスト実装.md",
+                "file": "MBO_ルール設計/a_最終報告書.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "MBO_テスト実装"
+              "title": "a_最終報告書"
             }
           },
           {
@@ -27,30 +27,44 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "temp/やるべきテスト範囲.md",
+                "file": "MBO_ルール設計/ルールの導入手順とノウハウの共有.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "やるべきテスト範囲"
+              "title": "ルールの導入手順とノウハウの共有"
             }
           },
           {
-            "id": "0d63f87defc33b65",
+            "id": "8b598090479026dc",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "temp/テストカバレッジ現状.md",
+                "file": "MBO_ルール設計/ルールの結果.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "テストカバレッジ現状"
+              "title": "ルールの結果"
+            }
+          },
+          {
+            "id": "727ea25dc31c4b1e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "MBO_ルール設計/weave案件_copilot-instructions.md.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "weave案件_copilot-instructions.md"
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -185,34 +199,25 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "temp/やるべきテスト範囲.md",
+                "file": "MBO_ルール設計/ルールの結果.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "やるべきテスト範囲のアウトライン"
-            }
-          },
-          {
-            "id": "3fdb91e4bed1a0ee",
-            "type": "leaf",
-            "state": {
-              "type": "git-view",
-              "state": {},
-              "icon": "git-pull-request",
-              "title": "Source Control"
+              "title": "ルールの結果のアウトライン"
             }
           }
         ],
-        "currentTab": 5
+        "currentTab": 4
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 321.5
   },
   "left-ribbon": {
     "hiddenItems": {
+      "obsidian-git:Open Git source control": false,
       "switcher:クイックスイッチャーを開く": false,
       "graph:グラフビューを開く": false,
       "canvas:新規キャンバスを作成": false,
@@ -220,22 +225,32 @@
       "templates:テンプレートを挿入": false,
       "command-palette:コマンドパレットを開く": false,
       "bases:Create new base": false,
-      "terminal:Open terminal": false,
-      "obsidian-git:Open Git source control": false
+      "terminal:Open terminal": false
     }
   },
-  "active": "d39bf06c09615fb1",
+  "active": "8b598090479026dc",
   "lastOpenFiles": [
+    "MBO_ルール設計/ルールの導入手順とノウハウの共有.md",
+    "MBO_ルール設計/ルールの結果.md",
+    "MBO_ルール設計/weave案件_copilot-instructions.md.md",
+    "MBO_ルール設計/weave案件へのルール導入結果.md",
+    "MBO_ルール設計/weave案件_RULES_USAGE_LOG.md.md",
+    "MBO_ルール設計/memo_26-02-26.md",
+    "MBO_ルール設計/a_最終報告書.md",
+    "MBO_時間管理/a_最終報告.md",
+    "MBO_時間管理",
+    "MBO_テスト/a_最終報告書.md",
+    "MBO_テスト",
+    "MBO_ルール設計/ルール設計.md",
+    "MBO_ルール設計",
+    "TODOリスト.md",
     "temp/テストカバレッジ現状.md",
     "temp/やるべきテスト範囲.md",
     "temp/FE・BEを統合したテスト基盤の構築.md",
-    "MBO_テスト実装.md",
-    "TODOリスト.md",
     "temp",
-    "MBO_時間管理_最終報告.md",
-    "MBO_テスト実装_最終報告.md",
+    "MBO_テスト/MBO_テスト実装.md",
+    "MBO_テスト/MBO_テスト実装_最終報告.md",
     "MBO_定量：予定時間を20%以上超過したタスクを半期で10%以内抑える.md",
-    "MBO_ルール設計のノウハウ共有.md",
     "ナビパーク改善提案.md",
     "MBO26年3月半期 ナビパークテスト導入の成果レポート.md",
     "1on2_26年2月末.md",
