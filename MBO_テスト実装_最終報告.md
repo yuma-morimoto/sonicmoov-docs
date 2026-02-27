@@ -18,12 +18,12 @@
 
 ### 小目標の達成度
 
-| 項目 | 達成度 | 状況 |
-|------|--------|------|
-| アプリ側でE2Eのテストを動かす環境を構築 | ○ | 完了 |
-| 法人対応のアプリ側のE2Eテストが書けた | ○ | 完了 |
-| 法人対応のアプリ側の単体テストが書けた | ○ | 完了 |
-| 法人対応のアプリ側の単体テストのカバレッジ65%達成 | × | [現在のカバレッジ: ％] |
+| 項目                         | 達成度 | 状況            |
+| -------------------------- | --- | ------------- |
+| アプリ側でE2Eのテストを動かす環境を構築      | ○   | 完了            |
+| 法人対応のアプリ側のE2Eテストが書けた       | ○   | 完了            |
+| 法人対応のアプリ側の単体テストが書けた        | ○   | 完了            |
+| 法人対応のアプリ側の単体テストのカバレッジ65%達成 | ×   | [現在のカバレッジ: ％] |
 
 **総合達成率**: 4項目中3項目完了 = **75%**
 
@@ -38,7 +38,7 @@
   - [具体的な環境構築内容を記入]
   - 例：Playwright導入、テスト実行基盤の整備、認証モック対応など
 - **成果物**:
-  - [PRリンク、ブランチ名を記入]
+  - [E2EのPOMを関数ベースで書いてみた](https://zenn.dev/sonicmoov/articles/ec18ed5659907c)
 
 #### 法人対応のE2Eテスト作成
 - **実施内容**:
@@ -53,8 +53,41 @@
   - [作成した単体テストの内容を記入]
   - composables配下のテスト実装状況
 - **テストケース数**: [件数]
-- **成果物**:
-  - [PRリンク、ブランチ名を記入]
+- **カバレッジ:**
+	- Stmts: 84.63%
+	- Branch: 93.16%
+	- Funcs: 78.75%
+```bash
+File                              | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s 
+----------------------------------|---------|----------|---------|---------|-------------------
+All files                         |   84.63 |    93.16 |   78.75 |    83.6 |                   
+ composables                      |   90.44 |    95.14 |   82.75 |    89.8 |                   
+  useCompareVersions.ts           |     100 |      100 |     100 |     100 |                   
+  useDateCalculator.ts            |   83.33 |       50 |     100 |     100 | 6                 
+  useExponentialBackoff.ts        |       0 |        0 |       0 |       0 | 6-46              
+  useFormatVehicleNumber.ts       |     100 |      100 |     100 |     100 |                   
+  useGeoCalculator.ts             |     100 |      100 |     100 |     100 |                   
+  usePagination.ts                |       0 |        0 |       0 |       0 | 1-51              
+  useParkingOpenChecker.ts        |     100 |      100 |     100 |     100 |                   
+  usePathParams.ts                |   97.14 |      100 |   85.71 |   96.55 | 23                
+  useTaxCalculator.ts             |     100 |      100 |     100 |     100 |                   
+  useURLHandler.ts                |     100 |      100 |     100 |     100 |                   
+  useUpdateChecker.ts             |     100 |      100 |     100 |     100 |                   
+  useValidation.ts                |     100 |      100 |     100 |     100 |                   
+ features/card/composables        |     100 |       50 |     100 |     100 |                   
+  useCardBrand.ts                 |     100 |      100 |     100 |     100 |                   
+  useCardFormatter.ts             |     100 |       50 |     100 |     100 | 4-8               
+ features/monthly/composables     |       0 |        0 |       0 |       0 |                   
+  useGenBottomSheetQueryParams.ts |       0 |      100 |       0 |       0 | 4-8               
+  useGetApplicant.ts              |       0 |        0 |       0 |       0 | 8-38              
+ features/parking/composables     |     100 |      100 |     100 |     100 |                   
+  useParkingSelectRouter.ts       |     100 |      100 |     100 |     100 |                   
+  usePriceSystemFormatter.ts      |     100 |      100 |     100 |     100 |                   
+ features/yumenavi/composables    |       0 |      100 |       0 |       0 |                   
+  useYumenaviIntegration.ts       |       0 |      100 |       0 |       0 | 4-25              
+----------------------------------|---------|----------|---------|---------|-------------------
+```
+
 
 ### 3.2 テスト戦略上の判断事項
 
