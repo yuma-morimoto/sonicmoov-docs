@@ -590,7 +590,7 @@ weave稼働調査システムのフロントエンドアプリケーション。
 
   
 
-```
+
 
 src/
 
@@ -664,7 +664,7 @@ src/
 
 └── utils/                  # ユーティリティ関数
 
-```
+
 
   
 
@@ -684,7 +684,7 @@ src/
 
   
 
-```
+
 
 features/iae/
 
@@ -704,7 +704,7 @@ features/iae/
 
 └── utils/                 # IAE専用ユーティリティ
 
-```
+
 
   
 
@@ -1002,7 +1002,7 @@ const {
 
 const fieldName = defineModel<string>("fieldName");
 
-```
+
 
   
 
@@ -1042,7 +1042,7 @@ const { data, isLoading, isError, error, refetch } = useQuery({
 
 });
 
-```
+
 
   
 
@@ -1188,7 +1188,7 @@ const { data, isLoading, isError, error, refetch } = useQuery({
 
 </style>
 
-```
+
 
   
 
@@ -1250,13 +1250,12 @@ const { data, isLoading, isError, error, refetch } = useQuery({
 
   
 
-```typescript
 
 import { getIaeIaePlanIdContract } from "@/api/admin/generated/api";
 
 import type { GetIaeContract200Response } from "@/api/admin/generated/model";
 
-```
+
 
   
 
@@ -1264,7 +1263,6 @@ import type { GetIaeContract200Response } from "@/api/admin/generated/model";
 
   
 
-```typescript
 
 import { useQuery } from "@tanstack/vue-query";
 
@@ -1290,7 +1288,7 @@ const { data, isLoading, isError, error, refetch } = useQuery<
 
 });
 
-```
+
 
   
 
@@ -1322,7 +1320,7 @@ const mutation = useMutation({
 
 });
 
-```
+
 
   
 
