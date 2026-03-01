@@ -17,7 +17,7 @@
 ## 小目標
 - [x] 前回のエージェントルール設計内容を整理し、社内案件でも利用できる構造へ再設計する
 - [x] ナビパーク案件などで試験導入し、運用上の改善点を収集する
-- [ ] 案件導入ガイドを作成し、他メンバーが参照可能な状態にする
+- [x] 案件導入ガイドを作成し、他メンバーが参照可能な状態にする
 - [ ] チーム内で共有する
 
 ---
@@ -40,6 +40,10 @@ echo -e "AGENTS.md\\nCLAUDE.md\\nRULES_USAGE_LOG.md" >> .git/info/exclude
 ```
 
 ## ルール設計体系ガイドの方針
+
+> [!WARNING]
+> ガイドはこちらが最終版です。以下は整理用のメモ書きです。
+> [c_ルールの構築・運用ガイド](c_ルールの構築・運用ガイド)
 
 - **課題：**
     - ルールを設計してきて思ったこととしては、細かくルール定義してもメリットがないことがわかった
@@ -157,8 +161,10 @@ style B stroke-width:3px
             - コンテキストが圧迫するといい加減な結果を出力する
         - コードを用いた具体的なルールは冗長の場合が多いため書かない（抽象的に書く）
 
----
 
+> [!WARNING]
+> ガイドはこちらが最終版です。以下は整理用のメモ書きです。
+> [c_ルールの構築・運用ガイド](c_ルールの構築・運用ガイド)
 ## ガイド
 
 ### 0. はじめに（このガイドで解決すること）
@@ -167,134 +173,6 @@ style B stroke-width:3px
 - ガイドの適用対象：フロントエンド（例：React/Next/Vue 等）、チーム開発、既存コードベース
 - “成果が出る条件”の定義：何を減らし、何を増やすか（例：差分の質、レビュー時間、バグ率）
 
-### ルール
-
-```markdown
-## プロジェクト概要
-
-ナビパークが運営する駐車場をオンラインで決済できるモバイルアプリケーションサービスのフロントエンド。
-Nuxt3（SPA）で構築されたWebアプリケーションをFlutterアプリのWebview内で表示している。
-
-## 使用可能なコマンド
-
-- 型チェック実行: `npm run typecheck`
-- Prettierチェック: `npm run lint:prettier`
-- ESLintチェック: `npm run lint:script`
-- Stylelintチェック: `npm run lint:style`
-- ユニットテスト実行: `npm run test`
-- ユニットテストをウォッチモードで実行: `npm run test:watch`
-- CI用テスト実行: `npm run test:ci`
-- カバレッジ計測付きテスト実行: `npm run coverage`
-- E2Eテスト実行: `npm run e2e`
-
-## 実装のガイドライン
-
-実装・修正は以下のガイドラインに従って行なってください:
-
-- 既存の実装とユーザーの要求の整合性が合わない場合は要求が間違いである可能性があるため、実装の前に迷わずユーザーに確認を取ること
-- `function`は使わずアロー関数を使う
-- any型を採用する以外に方法はないか検討する
-- 定数の場合は既存の定数定義を確認する
-
-## ドメイン用語
-
-このプロジェクトでは、一般的な意味とは異なる定義で使われる用語が存在します。
-**用語の意味は必ずここを正としてください。**
-
-- **時間貸し**
-  - 意味: 駐車場を時間単位で貸し出すこと（関連: 時間貸駐車場）
-  - 英語: normal
-  - 識別子: `normal`
-- **月極**
-  - 意味: 駐車場を月単位で貸し出すこと（関連: 月極駐車場）
-  - 英語: monthly
-  - 識別子: `monthly`
-- **通知（お知らせ）**
-  - 意味: アプリ内で配信される情報提供機能。
-  - 英語: notice
-  - 識別子: `notice`
-- **プッシュ通知**
-  - 意味: プッシュ通知機能。開封追跡機能あり
-  - 英語: push, notification
-  - 識別子: `push`
-- **仮申込**
-  - 意味: 月極駐車場の最初の簡易的な申込。本申込の前段階
-  - 英語: pre application
-  - 識別子: `preapplication`
-- **本申込**
-  - 意味: 仮申込後の正式な申込。署名・支払い・契約締結へと進む
-  - 英語: application
-  - 識別子: `application`
-- **区画 / 車室**
-  - 意味: 駐車場内の個別の駐車スペース
-  - 英語: garage
-  - 識別子: `garage`, `garageNumber`
-- **定期利用券（パス）**
-  - 意味: 一定期間特定の駐車場が使い放題になる券
-  - 英語: Pass
-  - 識別子: `Pass`, `UsersPass`
-  - 参照: [features/pass/](src/features/pass/)
-- **出庫決済**
-  - 意味: 時間貸し駐車場から車を出す際の精算
-  - 英語: Exit Parking Payment
-  - 識別子: `EXIT_PARKING`
-- **初期費用**
-  - 意味: 月極契約開始時に支払う初回費用（契約手数料・保証金・日割り料金などの合計）
-  - 英語: Initial Payment
-  - 識別子: `InitialPayment`
-- **夢なびポイント**
-  - 意味: 夢なびサービス共通のポイント。決済に充当可能
-  - 英語: Yumenavi Point
-  - 識別子: `YumenaviPoint`
-  - 参照: [features/yumenavi/](src/features/yumenavi/)
-- **アカウント種別**
-  - 意味: 個人会員か法人会員かの区分
-  - 英語: Account Type
-  - 識別子: `ACCOUNT_TYPES: PERSONAL / CORPORATION`
-
-## 技術スタック
-
-### コアフレームワーク・コアライブラリ
-
-- [Nuxt3](<https://nuxt.com/docs/3.x/>)
-- [TypeScript](<https://www.typescriptlang.org/docs/>)
-- [Node.js 20.x](<https://nodejs.org/docs/latest-v20.x/api/>)
-- [Vite](<https://vitejs.dev/guide/>)
-- [Tailwind CSS](<https://tailwindcss.com/docs>)
-- [yup](<https://github.com/jquense/yup>)
-- [vee-validate](<https://vee-validate.logaretm.com/v4/>)
-- [AWS Amplify](<https://docs.amplify.aws/>)
-- [MSW](<https://mswjs.io/>)
-
-### テスト系
-
-- [Vitest 4](<https://vitest.dev/>)
-- [Playwright](<https://playwright.dev/>)
-
-## ディレクトリ構成
-
-このプロジェクトは **Package by Feature** アーキテクチャを採用しています。
-機能ごとに関連するすべてのコード（API、コンポーネント、ロジック、型定義など）を1つのディレクトリにまとめ、機能の独立性と保守性を意識した設計になっています。
-
-### 全体
-
-```
-
-src/ ├── api/ # API層の共通実装 ├── assets/ # スタイルシート（Tailwind CSS） ├── components/ # 再利用可能なUIコンポーネント ├── composables/ # Vue Composables（ロジック・状態管理） ├── config/ # アプリケーション設定 ├── constants/ # グローバル定数 ├── features/ # 機能別モジュール（Package by Feature） ├── layouts/ # Nuxtレイアウト ├── middleware/ # Nuxtミドルウェア ├── mocks/ # MSWモック設定 ├── pages/ # Nuxtページ（ファイルベースルーティング） ├── plugins/ # Nuxtプラグイン ├── public/ # 静的アセット ├── repositories/ # APIクライアント ├── test/ # テスト設定 ├── types/ # TypeScript型定義 └── utils/ # ユーティリティ関数
-
-```
-
-### 主要ディレクトリの責務
-
-#### **features/** - 機能別モジュール（最重要）
-
-**Package by Feature** の中核となるディレクトリ。各機能が独立したモジュールとして管理されます。
-
-**feature内部構造:**
-
-```
-
-features/{feature-name}/ ├── api/ # 機能別API実装 │ ├── {feature}Repository.ts │ └── types/ # API型定義 ├── components/ # 機能専用コンポーネント ├── composables/ # 機能専用Composables（ロジック） │ ├── store/ # useStoreで状態管理 ├── constants/ # 定数定義 │ ├── index.ts │ └── schemas.ts # Yup検証スキーマ ├── mock/ # MSWモック実装 ├── model/ # ドメインモデル ├── utils/ # 機能専用ユーティリティ └── types/ # 機能型定義
 
 ### 1. ルール設計の原則（少ないルールで最大効果を出す）
 
