@@ -55,12 +55,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "無題のファイル.md",
+                "file": "codecov導入.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "無題のファイル"
+              "title": "codecov導入"
             }
           }
         ],
@@ -238,11 +238,11 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "8b117f7b90f37919",
+  "active": "8c1bb74b86f62d48",
   "lastOpenFiles": [
-    "見積もり一覧",
     "コーポレートサイトNext.JS構築作業.md",
-    "無題のファイル.md",
+    "codecov導入.md",
+    "見積もり一覧",
     "見積もり一覧/オンワード樫山_見積もり.md",
     "temp/テストカバレッジ現状.md",
     "MBO_テスト実装_最終報告.md",
