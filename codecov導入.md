@@ -1,5 +1,15 @@
-
-odds-park-lp Codecov導入見送りについて                                                                     
+## nhk-admin-frontend
+- backlog: https://sonicmoov.backlog.jp/view/MEASURE-80
+- github PR: https://github.com/sonicmoov/nhk-admin-frontend/pull/15
+- nhk-admin-frontendでcircle ciのエラーが出てしまっているので念の為確認する。→ [清水さん、村岡さんへ確認済み](https://sonicmoov.slack.com/archives/C0ACCK9S62W/p1772507365529359)
+- developブランチは使われていない。
+- 2年以上使われていないリポジトリ、村岡さんもわからない。
+- masterにマージすることにする。
+## odds-park-sp-mockup-v2
+- backlog: https://sonicmoov.backlog.jp/view/MEASURE-73
+## odds-park-lp
+- backlog: https://sonicmoov.backlog.jp/view/MEASURE-74
+### Codecov導入見送りについて                                                                     
 対象リポジトリ: sonicmoov/odds-park-lp                                                                        
 現状のリポジトリ構成ではCodecovの導入が困難なため、今回の対応から除外しました。                         
 理由：
@@ -63,3 +73,4 @@ jobs:
 3. コミットする
 4. プッシュする
 5. PRを作成する（ghコマンドを使用）
+

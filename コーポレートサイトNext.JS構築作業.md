@@ -1,4 +1,46 @@
 
+## 【非生産稼働】コーポレートサイト改修の概要
+- 概要：現状の構成からNext.JSに切り替える作業だと思う
+- 期間：
+	- 3月末まで（予定）ギリギリ
+	- 当初の予定では：モックアップ
+- アサイン：1~2名予定
+- 作業：
+	- 1. Next.JSの環境構築
+		- アサイン：自分
+	- 2. モックアップ実装
+		- アサイン：葉田さん、marizoさんあたり
+		- 作業：デザイン改修、モックアップ実装
+
+## 1. Next.JS環境の構築
+- [阿部さんとのSlackでのやりとり](https://sonicmoov.slack.com/archives/C0ABSE589/p1772176371963719)
+- [x] microcmsアカウントの作成
+- [x] vercelアカウントの作成
+- [x] Next.JS初期環境構築
+- [ ] microCMSの調査（Next.JSへ連携までするかは原さん阿部さんに確認）
+- [ ] Next.JS x microCMSでSSGの構成が作れるか可能性を調査する（SSGの方がパフォーマンスが高いので）
+	- [ ] microCMSの記事追加・更新をフックして再ビルド可能か（これはたぶん余裕でできる）
+	- [ ] microCMS側の追加・更新分だけの差分ビルドは可能か（こちらは無理な可能性が高い）
+		- [x] microCMSのwebhookを使って更新分だけビルドするのは難しそう。ただ、ページまたはfetch単位でrevalidateを設定すれば更新分だけビルドは可能そう。
+- microCMSとVercelアカウントに使用するメールアドレス
+	- frontend@sonicmoov.com
+
+## 不確定事項(原さん阿部さんあたりに確認)
+- githubのリポジトリ名
+	- こちらの確認はローカルで構築できてからでもいい
+
+---
+## microcmsアカウント情報
+- メールアドレス: frontend@sonicmoov.com
+- パスワード: d4nfpDCzA88C
+## vercelアカウント情報
+- メールアドレス: frontend@sonicmoov.com
+- パスワード: 
+
+## 参考
+- [【Next.js×microCMS×Vercel】初心者向け爆速ブログ作成ハンズオン](https://qiita.com/takakou/items/88dba056e6b391a28db6)
+- [microCMS - Getting Started（App Router）](https://document.microcms.io/tutorial/next/next-app-router-getting-started)
+
 ## 構成
 - Next.JS (AppRouter)
 - microcms
@@ -46,35 +88,4 @@
 - [ ] Lighthouseでパフォーマンス・アクセシビリティ確認
 - [ ] `next/image` による画像最適化
 - [ ] OGP画像の確認（SNSシェア時の表示）
-
-
-
-コーポレートサイト改修: 1~2名予定  
-
-- モックアップは2月後半〜3月にかけて作業（デザイン改修）
-- CMSはMicroCMS想定（設計・多分実装も2月から先行で着手できそう）
-- FW: Next.js
-
-すごい余裕あればで大丈夫なんだけど、SGの可能性探るためにも  
-- microCMSの記事追加・更新をフックして再ビルド可能か（これはたぶん余裕でできる）
-- microCMS側の追加・更新分だけの差分ビルドは可能か
-みたいなとこ調査できたら嬉しい、たぶん2個目がむりだけど （編集済み） 
-
-  
-
-[19:28]
-
-可能ならSGのほうがパフォーマンスいいはずなので
-
-
 ---
-## 質問事項
-
-お疲れ様です。
-コーポレートサイトのnextjs環境構築について質問があります。
-お聞きしたいこと：
-- githubのリポジトリ名
-- microcmsとvercelのアカウント作成に使用するメールアドレス
-- 以下のリポジトリは参考にできそうでしょうか
-	- https://github.com/sonicmoov/reloclub-common-platform-api
-お手数ですが、お願いいたします。

@@ -25,19 +25,20 @@
 ## 参考にする記事
 
 - [https://izanami.dev/post/47b08b5a-6e1c-4fb0-8342-06b8e627450a](https://izanami.dev/post/47b08b5a-6e1c-4fb0-8342-06b8e627450a)
-    
 - [https://github.blog/ai-and-ml/github-copilot/how-to-write-a-great-agents-md-lessons-from-over-2500-repositories/](https://github.blog/ai-and-ml/github-copilot/how-to-write-a-great-agents-md-lessons-from-over-2500-repositories/)
-    
 - [https://zenn.dev/imohuke/articles/ai-agent-rulefile-best-practices](https://zenn.dev/imohuke/articles/ai-agent-rulefile-best-practices)
-    
 - [https://zenn.dev/ncdc/articles/9bb22405eb9332](https://zenn.dev/ncdc/articles/9bb22405eb9332)
-    
+
 - ルールをignoreするコード
-    
 
 ```bash
 echo -e "AGENTS.md\\nCLAUDE.md\\nRULES_USAGE_LOG.md" >> .git/info/exclude
 ```
+
+
+- [あなたのCLAUDE.mdはおそらく間違っている：ボリス・チェルニーが決して犯さない7つの間違い](https://alirezarezvani.medium.com/your-claude-md-is-probably-wrong-7-mistakes-boris-cherny-never-makes-6d3e5e41f4b7)
+	- 800行のCLAUDE.mdより100行のCLAUDE.mdの方が結果が良かった
+	- Boris ChernyはClaude Codeの作者
 
 ## ルール設計体系ガイドの方針
 
