@@ -1,7 +1,9 @@
 {
   "permissions": {
     "allow": [
-      "WebFetch(domain:code.claude.com)"
+      "WebFetch(domain:code.claude.com)",
+      "Bash(claude mcp:*)",
+      "mcp__backlog__get_issue"
     ],
     "deny": [],
     "ask": []
