@@ -2,7 +2,9 @@
   "permissions": {
     "allow": [
       "WebFetch(domain:code.claude.com)",
-      "mcp__slack__slack_list_channels"
+      "mcp__slack__slack_list_channels",
+      "Bash(claude mcp:*)",
+      "mcp__backlog__get_issue"
     ],
     "deny": [],
     "ask": []
