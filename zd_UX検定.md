@@ -1,9 +1,13 @@
 
 - [esa - UX検定（基礎） 学習ソース](https://sonicmoov.esa.io/posts/1554/edit)
 - [シラバス](https://www.uxia.or.jp/certification/202305_ux_syllabus.pdf?20230515)
-- [2025年9月最終更新※UX検定™キーワード集単語帳](https://ankilot.com/view/?id=ddfbpgnnhD)
+
+## 問題集
 - [【UX検定基礎】試験に出るかもしれない用語集（シラバス抜粋）](https://www.udablog.com/entry/2024/11/19/123000)
 - [過去問.pdf](https://files.esa.io/uploads/production/attachments/17777/2026/03/09/108885/d9f230ec-825a-4f5f-92ea-cf021eeb4054.pdf)
+- [2025年9月最終更新※UX検定™キーワード集単語帳](https://ankilot.com/view/?id=ddfbpgnnhD)
+- [暗記メーカー](https://ankimaker.com/workbooks/e1dcf08d-efcd-4f40-a42b-a086011e326c?utm_source=web&utm_medium=share&utm_campaign=workbook)
+- [【UX検定基礎】本番形式の予想問題100問｜過去問代わりに！](https://note.com/sakura_5ka9/n/n803b9ad691f9)
 
 
 - UXインテリジェンスの概念
