@@ -1,0 +1,21 @@
+{
+  "version": 1,
+  "hooks": {
+    "preToolUse": [
+      {
+        "type": "command",
+        "bash": "./approve-tool-use.sh",
+        "cwd": "/Users/l_0026/alerter",
+        "timeoutSec": 75
+      }
+    ],
+    "sessionEnd": [
+      {
+        "type": "command",
+        "bash": "./notify-session-end.sh",
+        "cwd": "/Users/l_0026/alerter",
+        "timeoutSec": 10
+      }
+    ]
+  }
+}

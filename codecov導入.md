@@ -1,3 +1,18 @@
+## やること
+- [Test Analytics](https://docs.codecov.com/docs/test-analytics)を有効にする
+
+## dg-ucs-mockup
+- backlog: https://sonicmoov.backlog.jp/view/MEASURE-75
+- github: https://github.com/sonicmoov/dg-ucs-mockup
+- PR: https://github.com/sonicmoov/dg-ucs-mockup/pull/167
+- 状態：レビュー待ち
+
+## payroll-mock
+- backlog: https://sonicmoov.backlog.jp/view/MEASURE-76
+- github: https://github.com/sonicmoov/payroll-mock
+- PR: https://github.com/sonicmoov/payroll-mock/pull/153
+- 状態：レビュー待ち
+
 ## nhk-admin-frontend
 - backlog: https://sonicmoov.backlog.jp/view/MEASURE-80
 - github PR: https://github.com/sonicmoov/nhk-admin-frontend/pull/15
