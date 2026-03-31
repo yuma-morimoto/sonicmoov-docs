@@ -5,13 +5,13 @@
 - backlog: https://sonicmoov.backlog.jp/view/MEASURE-75
 - github: https://github.com/sonicmoov/dg-ucs-mockup
 - PR: https://github.com/sonicmoov/dg-ucs-mockup/pull/167
-- 状態：レビュー待ち
+- 状態：完了
 
 ## payroll-mock
 - backlog: https://sonicmoov.backlog.jp/view/MEASURE-76
 - github: https://github.com/sonicmoov/payroll-mock
 - PR: https://github.com/sonicmoov/payroll-mock/pull/153
-- 状態：レビュー待ち
+- 状態：完了
 
 ## nhk-admin-frontend
 - backlog: https://sonicmoov.backlog.jp/view/MEASURE-80
@@ -32,8 +32,9 @@
 - やること
 	- [x] vitest入れる
 	- [x] PR作成
-	- [ ] レビュー承認
-	- [ ] マージ
+	- [x] レビュー承認
+	- [x] マージ
+- 状態：完了
 ## odds-park-lp
 - backlog: https://sonicmoov.backlog.jp/view/MEASURE-74
 - github: https://github.com/sonicmoov/odds-park-lp
@@ -43,10 +44,12 @@
 - やること
 	- [x] vitest入れる
 	- [x] [ここ](https://docs.codecov.com/docs/github-5b-setting-coverage-standards-with-flags)を参考にFlagsを設定する
-	- [ ] ダミーのテストファイルを削除する
+	- [x] ダミーのテストファイルを削除する
 	- [x] PR作成
-	- [ ] レビュー承認
-	- [ ] マージ
+	- [x] レビュー承認
+	- [x] マージ
+- 状態：完了
+
 ### Codecov導入見送りについて                                                                     
 対象リポジトリ: sonicmoov/odds-park-lp                                                                        
 現状のリポジトリ構成ではCodecovの導入が困難なため、今回の対応から除外しました。

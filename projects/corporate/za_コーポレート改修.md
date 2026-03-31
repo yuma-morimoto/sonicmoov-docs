@@ -45,8 +45,26 @@
 - 採用情報のどの要素をCMSで管理できるようにするか？
 	- [ ] 本田さんが青木さんに確認中
 
-### 今後やること
-- zodスキーマ等の定義
+### カスタムフィールド
+
+#### SEO（カスタムフィールドID: `seo`）
+各コンテンツAPIに共通フィールドとして追加する。空の場合は既存フィールドにフォールバックする。
+
+| フィールドID          | 表示名         | 種類      | フォールバック                           |
+| ---------------- | ----------- | ------- | --------------------------------- |
+| `og_title`       | SEOタイトル     | テキスト    | 記事タイトル                            |
+| `og_description` | メタディスクリプション | テキストエリア | 本文冒頭                              |
+| `og_image`       | OGP画像       | 画像      | `thumbnail`フィールド（ない場合はデフォルトOGP画像） |
+
+**コードで固定するもの**（CMSフィールド不要）
+- `og:locale` = `ja_JP`
+- `og:site_name` = `株式会社ソニックムーブ | デジタルでコミュニケーションをデザインする`
+- `og:type` = コンテンツ種別に応じて固定（`website` / `article`）
+- `og:url` / `canonical` = Next.jsで自動生成
+- `og:image:secure_url` / `og:image:width` / `og:image:height` = 画像フィールドから自動取得
+- `twitter:card` = `summary_large_image`
+- `twitter:site` / `twitter:creator` = `@sonicmoov`
+- `twitter:title` / `twitter:description` / `twitter:image` = og系と共通化
 
 ### スキーマ設計のポイント
 - 表示場所（ページ）を定義しない、コンテンツそのものを定義する
@@ -55,8 +73,8 @@
 - 運用者の視点を取り入れる
 
 ---
-
-## メモ 本田さん共有MTG 3/17
+## 議事録
+### 3/17 本田さん共有MTG
 
 - **実装着手の流れ**
 	- 最初はグレーのページからやっていく
@@ -71,7 +89,7 @@
 	- 実績一覧で管理画面から操作したいことは？
 	- → タグの追加削除のみ
 
-## メモ 3/17
+### 3/17 メモ 原さん、安倍さん、葉田さんで共有MTG 
 - select itemsのフィールドがapiで取ってこれるか？
 	- https://document.microcms.io/management-api/get-api-info
 - SEO OGPの設定をフィールドで入れないといけないか確認する？
@@ -90,6 +108,55 @@
 - [ ] 再ビルド時に`/api/v1/apis/{endpoint}`からフィールドを取得して`gen:types`まで自動実行する仕組みを作る
 - [ ] Next.jsの画面プレビュー方法を調査する
 - [ ] 阿部さんのベース準備後に`Vercel × microCMS × Next.js`の動作確認をする
+
+---
+
+## 技術調査
+
+### microCMS マネジメントAPI - セレクトフィールドの取得
+- **参照:** https://document.microcms.io/management-api/get-api-info
+- **結論: 取得できる**
+- `GET /api/v1/apis/{endpoint}` のレスポンス内、`kind: "select"` のフィールドに `selectItems` 配列が含まれる
+
+```json
+{
+  "fieldId": "tags",
+  "kind": "select",
+  "multipleSelect": true,
+  "selectItems": [
+    { "id": "Hc1QzudmqV", "value": "更新情報" },
+    { "id": "Fx0fDbBj7S", "value": "チュートリアル" }
+  ]
+}
+```
+
+- 一覧ページのフィルターUIは、ビルド時にこの `selectItems` を取得してコンポーネントに渡す方針で実装可能
+- APIキーはサーバーサイドのみで使用すること（クライアントに露出しない）
+- マネジメントAPIは現在 **ベータ版**
+
+### microCMS 画面プレビュー
+
+- **参照:** https://document.microcms.io/manual/screen-preview
+- **結論: 実装可能**（ただし静的サイト構成のため、プレビューページはCSRで実装する必要がある）
+
+#### 仕組み
+
+1. microCMS管理画面でプレビューURLを設定する（`API設定 → 画面プレビュー`）
+   - URLパターン例: `https://example.com/preview?contentId={CONTENT_ID}&draftKey={DRAFT_KEY}`
+2. 管理画面の「プレビュー」ボタンを押すと、`contentId` と `draftKey` をクエリパラメータに含んだURLに遷移する
+3. フロントエンド側でクエリパラメータを取得し、`draftKey` 付きでmicroCMS APIにリクエストして下書きコンテンツを取得・描画する
+
+#### Next.js App Router での実装方針
+
+- `app/preview/page.tsx` を `'use client'` で作成（ビルド時にコンテンツが不明なため、CSR必須）
+- `useSearchParams()` で `contentId` と `draftKey` を取得（`<Suspense>` でラップが必要）
+- クライアントサイドで microcms-js-sdk を使い、`draftKey` オプション付きでコンテンツを取得・表示
+- プレビュー用APIキーは **GETのみの権限** に制限し、`NEXT_PUBLIC_` プレフィックスで公開する
+- ローカル開発時は `http://localhost:3000/preview?contentId={CONTENT_ID}&draftKey={DRAFT_KEY}` で確認
+
+### GitHub Actionsの設定方法
+- [【コンテンツのWebhook連携】GitHub Actionsの設定方法について](https://help.microcms.io/ja/knowledge/webhook-github-actions-settings)
+- [Webhookのタイミング](https://document.microcms.io/manual/webhook-setting)
 
 ---
 
