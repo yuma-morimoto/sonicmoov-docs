@@ -10,8 +10,19 @@
 - **締切（実装）**: 2026-03-31
 - **お客様確認**：2026-04-06
 - **リリース予定**: 2026-04-27
+- **Backlog**: <https://sonicmoov.backlog.jp/projects/SHUEISYA_SHINJINSYO_INNER>
 - **基本設計書**: [Google Sheets](https://docs.google.com/spreadsheets/d/17AjDd-uWtkd7XXWgMM8zwq0I6ilhJtZlBoiLylfXWv8/edit?gid=989749509#gid=989749509)
-- **FigmaMake**: https://www.figma.com/make/w5ZDQSlI33LyyR1zRlPW1O/%E3%80%90%E9%9B%86%E8%8B%B1%E7%A4%BE%E3%80%91%E3%83%A4%E3%83%B3%E3%82%B8%E3%83%A3%E3%83%B3%E6%96%B0%E4%BA%BA%E8%B3%9E-LINE?t=LgPdY03rlDuwv1Q7-1
+- **FigmaMake**: <https://www.figma.com/make/w5ZDQSlI33LyyR1zRlPW1O/%E3%80%90%E9%9B%86%E8%8B%B1%E7%A4%BE%E3%80%91%E3%83%A4%E3%83%B3%E3%82%B8%E3%83%A3%E3%83%B3%E6%96%B0%E4%BA%BA%E8%B3%9E-LINE?t=LgPdY03rlDuwv1Q7-1>
+- ミニアプリリンク(dev): [https://miniapp.line.me/2009622141-f6ChkpAa](https://miniapp.line.me/2009622141-f6ChkpAa)
+- ミニアプリリンク(stg): [https://miniapp.line.me/2009502995-ExBKCM2t](https://miniapp.line.me/2009502995-ExBKCM2t)
+
+### ミニアプリBasic認証
+
+| 項目   | 内容       |
+| ---- | -------- |
+| ID   | ynjn     |
+| PASS | D6dwGkrF |
+
 
 ### 構成
 

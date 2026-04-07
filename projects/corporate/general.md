@@ -10,6 +10,13 @@
 	- モックアップ実装
 		- アサイン：葉田さん、marizoさんあたり
 		- 作業：デザイン改修、モックアップ実装
+- リポジトリ: https://github.com/sonicmoov/sonicmoov-corporate-site
+
+## やること
+- [ ] モックデータの定義を`_mock.ts`からmicrocmsに置き換える
+- [ ] どのようにフェッチするか
+## 相談事項
+- [ ] .tool-versionsの設置とnodeバージョンについて
 
 ## 構成
 - Next.JS (AppRouter)
@@ -24,7 +31,7 @@
 
 ## ページ
 
-- トップページ（固定でいいかも？）
+- トップページ
 - SMVについて
 - サービストップ
 - 実績一覧
@@ -104,11 +111,14 @@
 	- これは阿部さんがベース作ってくれてから着手する
 
 ### TODO（メモ 3/17）
-- [ ] SEO（OGP）用のカスタムフィールドを作成する（SEO設定されていなければ、既存の記事情報を使う）
-- [ ] 再ビルド時に`/api/v1/apis/{endpoint}`からフィールドを取得して`gen:types`まで自動実行する仕組みを作る
+- [x] SEO（OGP）用のカスタムフィールドを作成する（SEO設定されていなければ、既存の記事情報を使う）
+- [x] 再ビルド時に`/api/v1/apis/{endpoint}`からフィールドを取得して`gen:types`まで自動実行する仕組みを作る
+	- [x] → productionでは型が必要ないので仕組み自体不要な可能性がある
 - [ ] Next.jsの画面プレビュー方法を調査する
-- [ ] 阿部さんのベース準備後に`Vercel × microCMS × Next.js`の動作確認をする
 
+### 4/3 話し合いメモ
+- package by featureは採用しない（過剰すぎるため）口頭で相談
+- tailwindcssで置き換えるんじゃなくて、現行ページのcssをそのまま使う
 ---
 
 ## 技術調査
@@ -162,13 +172,6 @@
 
 ## Next.JS環境構築
 - [阿部さんとのSlackでのやりとり](https://sonicmoov.slack.com/archives/C0ABSE589/p1772176371963719)
-- [x] microcmsアカウントの作成（指定されたメールアドレスで作成）
-- [x] vercelアカウントの作成（指定されたメールアドレスで作成）
-- [x] Next.JS初期環境構築
-- [x] Next.JS x microCMSでSSGの構成が作れるか可能性を調査する（SSGの方がパフォーマンスが高いので）
-	- [x] microCMSの記事追加・更新をフックして再ビルド可能か（これはたぶん余裕でできる）
-	- [x] microCMS側の追加・更新分だけの差分ビルドは可能か（こちらは無理な可能性が高い）
-		- [x] microCMSのwebhookを使って更新分だけビルドするのは難しそう。ただ、ページまたはfetch単位でrevalidateを設定すれば更新分だけビルドは可能そう。
 - microCMSとVercelアカウントに使用するメールアドレス
 	- frontend@sonicmoov.com
 
