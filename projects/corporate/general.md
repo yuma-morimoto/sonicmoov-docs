@@ -2,25 +2,16 @@
 ## 概要
 - 現状のwordpressの構成からmicroCMS × Next.JSにリニューアルする
 - [洋子さんが作成したリニューアル構想 - slack](https://sonicmoov.slack.com/archives/CAQK9SB53/p1768455953395639?thread_ts=1767957465.561049&cid=CAQK9SB53)
-- 開発期間：26年3-4月（当初は26年3月末までだったが伸びた）
-- アサイン：森本、葉田さん、（marizoさん？
+- 開発期間: 26年3-4月（当初は26年3月末までだったが伸びた）
+- アサイン: 森本、葉田さん、阿部さん
+- Backlog: https://sonicmoov.backlog.jp/projects/SMV_HP2021
+- Repo: https://github.com/sonicmoov/sonicmoov-corporate-site
 - 作業：
 	- Next.JSの環境構築
 		- アサイン：自分
 	- モックアップ実装
 		- アサイン：葉田さん、marizoさんあたり
 		- 作業：デザイン改修、モックアップ実装
-- リポジトリ: https://github.com/sonicmoov/sonicmoov-corporate-site
-
-## やること
-- [ ] モックデータの定義を`_mock.ts`からmicrocmsに置き換える
-- [ ] どのようにフェッチするか
-## 相談事項
-- [ ] .tool-versionsの設置とnodeバージョンについて
-
-## 構成
-- Next.JS (AppRouter)
-- microcms
 
 ## microcmsアカウント情報
 - メールアドレス: frontend@sonicmoov.com
@@ -28,6 +19,12 @@
 ## vercelアカウント情報
 - メールアドレス: frontend@sonicmoov.com
 - パスワード: なし（PINコード）
+
+
+## 構成
+- Next.JS (AppRouter)
+- microcms
+
 
 ## ページ
 

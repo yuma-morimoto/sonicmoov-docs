@@ -23,7 +23,6 @@
 | ID   | ynjn     |
 | PASS | D6dwGkrF |
 
-
 ### 構成
 
 | 種別                | リポジトリ                                                                           |
@@ -47,26 +46,6 @@
 | -------------------------------------------------------------------------- | ----------------------------------- | --------- | --- |
 | [INNER-29](https://sonicmoov.backlog.jp/view/SHUEISYA_SHINJINSYO_INNER-29) | ミニアプリ用API仕様書 作成（reference/app.yaml） | 3/25〜3/26 | 完了  |
 | [INNER-20](https://sonicmoov.backlog.jp/view/SHUEISYA_SHINJINSYO_INNER-20) | フロントLIFF開発                          | 3/18〜3/31 | 着手中 |
-
-## 全体タスク一覧
-
-| チケット                                                                       | 概要               | 担当         | 期間        | 状態      |
-| -------------------------------------------------------------------------- | ---------------- | ---------- | --------- | ------- |
-| [INNER-29](https://sonicmoov.backlog.jp/view/SHUEISYA_SHINJINSYO_INNER-29) | ミニアプリ用API仕様書 作成  | y.morimoto | 3/25〜3/26 | 処理中     |
-| [INNER-28](https://sonicmoov.backlog.jp/view/SHUEISYA_SHINJINSYO_INNER-28) | Entity実装         | m.kakuho   | 3/25      | 処理中     |
-| [INNER-27](https://sonicmoov.backlog.jp/view/SHUEISYA_SHINJINSYO_INNER-27) | API作成：管理画面       | m.kakuho   | 3/25〜3/31 | 処理中     |
-| [INNER-26](https://sonicmoov.backlog.jp/view/SHUEISYA_SHINJINSYO_INNER-26) | Bot作成：持ち込み予約     | m.kakuho   | 3/17〜3/23 | 処理中     |
-| [INNER-25](https://sonicmoov.backlog.jp/view/SHUEISYA_SHINJINSYO_INNER-25) | Bot作成：応募情報入力     | m.kakuho   | 3/17〜3/23 | 処理中     |
-| [INNER-24](https://sonicmoov.backlog.jp/view/SHUEISYA_SHINJINSYO_INNER-24) | Bot作成            | m.kakuho   | 3/17〜3/23 | 処理中     |
-| [INNER-23](https://sonicmoov.backlog.jp/view/SHUEISYA_SHINJINSYO_INNER-23) | Bot作成：友達追加       | m.kakuho   | 3/17〜3/23 | DEV確認依頼 |
-| [INNER-22](https://sonicmoov.backlog.jp/view/SHUEISYA_SHINJINSYO_INNER-22) | テスト項目書の作成        | SMV_倉本大夢   | 3/19〜3/27 | 処理中     |
-| [INNER-20](https://sonicmoov.backlog.jp/view/SHUEISYA_SHINJINSYO_INNER-20) | フロントLIFF開発       | 阿部千晃       | 3/18〜3/31 | 未対応     |
-| [INNER-9](https://sonicmoov.backlog.jp/view/SHUEISYA_SHINJINSYO_INNER-9)   | マイグレーション作成       | m.kakuho   | 3/11〜3/13 | DEV確認依頼 |
-| [INNER-5](https://sonicmoov.backlog.jp/view/SHUEISYA_SHINJINSYO_INNER-5)   | 管理画面実装           | m.kakuho   | 3/13〜3/17 | DEV確認依頼 |
-| [INNER-4](https://sonicmoov.backlog.jp/view/SHUEISYA_SHINJINSYO_INNER-4)   | worker用API仕様書 作成 | m.kakuho   | 3/9〜3/11  | 完了      |
-| [INNER-3](https://sonicmoov.backlog.jp/view/SHUEISYA_SHINJINSYO_INNER-3)   | 管理画面用API仕様書 作成   | m.kakuho   | 3/6〜3/11  | 完了      |
-| [INNER-2](https://sonicmoov.backlog.jp/view/SHUEISYA_SHINJINSYO_INNER-2)   | テーブル設計           | m.kakuho   | 3/6〜3/11  | 完了      |
-| [INNER-1](https://sonicmoov.backlog.jp/view/SHUEISYA_SHINJINSYO_INNER-1)   | 設計               | m.kakuho   | 3/6〜3/11  | 完了      |
 
 ## ミニアプリ用API仕様書
 
