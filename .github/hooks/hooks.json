@@ -1,0 +1,12 @@
+{
+  "version": 1,
+  "hooks": {
+    "sessionEnd": [
+      {
+        "type": "command",
+        "bash": "alerter --title 'sonicmoov-docs' --message 'タスクが完了しました。' --sound default",
+        "timeoutSec": 10
+      }
+    ]
+  }
+}
