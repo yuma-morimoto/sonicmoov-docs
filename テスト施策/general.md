@@ -20,9 +20,16 @@
 - 体系化を正式なガイドラインとしてまとめる
 
 ## 進捗
-- [x] codecovの導入（残り1件以外は導入完了）
+- [x] codecovの導入
 - [ ] 対象プロジェクト決定
+      コーポレートはウェブアプリとしてテスト可能
 - [ ] 現状把握
 	- [ ] github調査やアンケート調査
 
-## 22日までにできることを洗い出す
+## 現状把握
+### チケット
+- [MEASURE-97](https://sonicmoov.backlog.jp/view/MEASURE-97) 【現状把握】ナビパーク
+- [MEASURE-99](https://sonicmoov.backlog.jp/view/MEASURE-99) 【現状把握】イースト
+- [MEASURE-98](https://sonicmoov.backlog.jp/view/MEASURE-98) 【現状把握】TRP
+- [MEASURE-100](https://sonicmoov.backlog.jp/view/MEASURE-100) 【現状把握】ほほえみごはん
+- [MEASURE-101](https://sonicmoov.backlog.jp/view/MEASURE-101) 【現状把握】オッズパーク LP
