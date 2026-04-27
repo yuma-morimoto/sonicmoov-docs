@@ -13,6 +13,20 @@
 デイリーノートは毎日のタスクの予定や記録、メモを日毎に残しておくものです。
 毎日何が起こったのかを把握したり、追加のタスクがあれば記録したりします。
 
+## MCP設定
+
+MCP設定ファイル: `/Users/l_0026/.copilot/mcp-config.json`
+
+### 設定済みMCPサーバー
+
+- **chrome-devtools**: ブラウザ操作
+- **backlog-mcp-server**: Backlog連携
+  - `/Users/l_0026/mcp-servers/backlog-mcp-server/build/index.js`
+- **zac**: ZAC勤怠・工数管理
+  - `/Users/l_0026/mcp-servers/zac-mcp-server/dist/index.js`
+  - `ZAC_BASE_URL`: `https://sonicmoov.zac.ai/sonicmoov/b`
+  - `ZAC_LOGIN_ID`: `y.morimoto`
+
 ## ユーザー（質問者）情報
 - 名前: 森本悠真
 - ユーザー名: y.morimoto
@@ -20,6 +34,34 @@
 
 ## Backlogの利用
 - ユーザーから明示的な指示がない限りBacklogの更新（状態、コメント）は行わなず、必ず確認を取ること。
+
+## ZAC経費申請
+
+### 経費申請の手順
+
+1. `zac_get_expense_himoku` で費目一覧を取得する（id_shubetsu: 4=販管 or 1=JOB, id_expense_request_type: 100=立替）
+2. `zac_add_expense_data` で経費明細を登録する（新規の場合はid_keihiを省略→ヘッダーも自動作成）
+3. 必要に応じて同じ経費申請IDに `zac_add_expense_data` でid_keihiを指定して明細を追加
+4. `zac_submit_expense` で精算申請する（ユーザーの確認を取ること）
+
+### 費目の主なもの（販管/立替）
+
+| IdHimoku | Code | 名称 |
+|---|---|---|
+| 52 | 5000 | 通勤費／販管 |
+| 157 | 5180 | 交通費（3万円未満）／旅費交通費 |
+| 158 | 5184 | 交通費（3万円超）／旅費交通費 |
+| 123 | 5120 | 研修、セミナー受講等／教育費 |
+| 117 | 5100 | 新聞、雑誌、図書／新聞図書費 |
+
+### 経費申請ツール一覧
+
+- `zac_get_expense_list` - 未処理の経費申請一覧
+- `zac_get_expense` - 特定経費申請の詳細
+- `zac_get_expense_himoku` - 費目検索
+- `zac_add_expense_data` - 経費明細登録（新規・追加）
+- `zac_submit_expense` - 精算申請（確認必須）
+- `zac_delete_expense` - 経費申請削除（未申請のみ）
 
 ## ZAC確認・登録
 
@@ -49,3 +91,20 @@
   - 作業の場合は「案件外のプロジェクト・作業」を選択
   - ミーティングの場合は「案件外のMTG」を選択
 - 備考：対応内容を入力
+
+## 月次稼働時間の計算
+
+### 残り必要稼働時間の確認手順
+
+1. `zac_get_monthly_calendar` で対象月のカレンダーを取得する
+2. 以下の情報を整理する：
+   - **稼働済み工数合計**：`TimeRequired`（分単位）を合計
+   - **休暇日**：`TimeRequired` が 0 の平日は休暇の可能性があるためユーザーに確認し、休暇なら **8h として換算**する
+   - **残り稼働予定日数**：`IsHoliday=0` かつ日付が今日より後の平日をカウント
+3. 計算式：
+   ```
+   所定労働時間 = 月の平日数 × 8h
+   現時点合計   = 稼働済み工数 + 休暇日数 × 8h
+   月末予測合計 = 現時点合計 + 残り稼働予定日数 × 8h
+   ```
+4. 月末予測合計と所定労働時間を比較して過不足を伝える
