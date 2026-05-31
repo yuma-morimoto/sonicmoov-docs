@@ -44,7 +44,7 @@ MCP設定ファイル: `/Users/l_0026/.copilot/mcp-config.json`
 2. `zac_add_expense_data` で経費明細を登録する（新規の場合はid_keihiを省略→ヘッダーも自動作成）
 3. 必要に応じて同じ経費申請IDに `zac_add_expense_data` でid_keihiを指定して明細を追加
 4. `zac_submit_expense` で精算申請する（ユーザーの確認を取ること）
-5. 申請後は、「申請承認後にPDF書き出してGoogleフォームの送信」も忘れないようにユーザーに喚起してください。
+5. 申請後は、「申請承認後にPDF書き出して[Googleフォーム](https://docs.google.com/forms/d/e/1FAIpQLSdNWYmaj4x9PHIhLtiX8OshMUY6IPc5MYDiUPPPCT4oZJqhaw/viewform)の送信」も忘れないようにユーザーに喚起してください。
 
 ### 費目の主なもの（販管/立替）
 
