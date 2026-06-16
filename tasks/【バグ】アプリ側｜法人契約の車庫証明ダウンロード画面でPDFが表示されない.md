@@ -1,6 +1,6 @@
 - backlog: https://sonicmoov.backlog.jp/view/STARTS_NAVIPARK_SMV-2412
 ## Status
-- Active
+- Complete
 ## Activities
 - **2025-12-26T13:59**
 	- 後藤さんから確認依頼

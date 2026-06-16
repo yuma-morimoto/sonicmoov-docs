@@ -2,6 +2,9 @@
 - 最終的に、ウェブアプリ、マークアップにおいて、テストの考え方（フロントにおけるユニット・統合・E2E等の考え方）、テストコードを書く手順、テスト計画（どこにテストを書くか）、良いテスト・悪いテストなど判断を中心に標準化を行いたい。
 - 最終成果物のガイドライン（マニュアル）はテストそのものの書き方よりもテスト自動化を運用するための知識体系としたい。（ISOのマネジメントシステムの考え方を取り入れる）
 
+## 大和冷機 テスト計画
+- 橋本さん テスト観点のPR: https://github.com/sonicmoov/drk-specs/pull/30
+
 ## スケジュール
 - 3/30 課題を立てる予定
 
@@ -30,13 +33,6 @@
 ## 標準化フェーズ（10月まで）
 - 体系化を正式なガイドラインとしてまとめる
 
-## 進捗
-- [x] codecovの導入
-- [ ] 対象プロジェクト決定
-      コーポレートはウェブアプリとしてテスト可能
-- [ ] 現状把握
-	- [ ] github調査やアンケート調査
-
 ## 現状把握
 ### チケット
 - [MEASURE-97](https://sonicmoov.backlog.jp/view/MEASURE-97) 【現状把握】ナビパーク
@@ -44,3 +40,12 @@
 - [MEASURE-98](https://sonicmoov.backlog.jp/view/MEASURE-98) 【現状把握】TRP
 - [MEASURE-100](https://sonicmoov.backlog.jp/view/MEASURE-100) 【現状把握】ほほえみごはん
 - [MEASURE-101](https://sonicmoov.backlog.jp/view/MEASURE-101) 【現状把握】オッズパーク LP
+
+## 仮説検証
+### チケット
+- [MEASURE-144](https://sonicmoov.backlog.jp/view/MEASURE-144) 【検証】設計フェーズでのテスト計画
+- [MEASURE-145](https://sonicmoov.backlog.jp/view/MEASURE-145) 【検証】テスト範囲・テストレイヤー判断基準の作成
+- [MEASURE-146](https://sonicmoov.backlog.jp/view/MEASURE-146) 【検証】AIによるコンポーネント・E2Eテストの有効性（分割済み）
+- [MEASURE-147](https://sonicmoov.backlog.jp/view/MEASURE-147) 【検証】Astro案件の代替テスト手段
+- [MEASURE-148](https://sonicmoov.backlog.jp/view/MEASURE-148) 【検証】AIによるテストコード生成
+- [MEASURE-149](https://sonicmoov.backlog.jp/view/MEASURE-149) 【検証】AIによるマニュアルテストの自動化
