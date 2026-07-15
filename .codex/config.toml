@@ -1,0 +1,10 @@
+[mcp_servers.backlog]
+command = "node"
+args = ["/Users/l_0026/mcp-servers/backlog-mcp-server/build/index.js"]
+
+[mcp_servers.backlog.env]
+BACKLOG_DOMAIN = "sonicmoov.backlog.jp"
+BACKLOG_API_KEY = "kKe2EOfVGg0vUdqisJg44sxgqVP9RnXWjofATuPQBQQuGqHcDSEb9mtKY5A6GjuF"
+
+[mcp_servers.sentry]
+url = "https://mcp.sentry.dev/mcp"

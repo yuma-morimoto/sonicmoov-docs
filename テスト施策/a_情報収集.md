@@ -1,3 +1,21 @@
+- [DOM操作おけるクエリ順序](https://testing-library.com/docs/queries/about/#priority)
+- [小規模開発のためのテスト方針を考える](https://zenn.dev/ik_takagishi/books/5c6c9fe3a7ad2c/viewer/4be626)
+- [フロントエンドのテストのガイドライン](https://zenn.dev/ik_takagishi/books/5c6c9fe3a7ad2c/viewer/10b441)
+- [Spotify Engineering テストハニカム](https://engineering.atspotify.com/2018/01/testing-of-microservices)
+	- https://x.com/searls/status/1393385209089990659
+- [モックは必要悪で、しないにこしたことはない](https://blog.8-p.info/ja/2021/10/12/mock/)
+- [E2Eテストは「人間が書く」から「AIに書かせる」時代に - Claude Codeで目指したテスト作成のAgent Loop -](https://tech.yappli.io/entry/create-e2e-test-with-claude-code)
+- [シナリオテストにおけるBRIEFの原則 - Cucumber](https://cucumber.io/blog/bdd/keep-your-scenarios-brief/)
+	- BRIEF の 6 原則:
+		- Business language: ドメイン用語を使う
+		- Real data: 実データを使う
+		- Intention revealing: 意図を書く、メカニクス（UI 操作）を書かない ← 我々が違反中
+		- Essential: 本質的でない情報を削る
+		- Focused: 1 シナリオ 1 ルール
+		- Brief: 5 行以内
+- [CastingONEにおけるフロントエンドテスト戦略について](https://zenn.dev/castingone_dev/articles/e0e8c9becd0a3c)
+- [たった２つのステップを意識するだけで書けない単体テストがほぼなくなる](https://qiita.com/_mi/items/ce66aa922ee46b00ab2d)
+
 ## テストプロセス
 - テストスクリプトから書き始めるのではなく、何をどうテストするのかから考え始めることが重要である。
 - テスト分析・設計を頭の中で暗黙的に行うのをやめ、言語化してチームで共通認識が取れている状態を目指す。
@@ -67,3 +85,6 @@ playwright-cli screenshot --output screenshots/cart-top.png --session=pc
 - 左は静的テスト3つ、右は静的テスト1つだがカバレッジは同じ
 - ファイル自体を除外したほうが良いかというとそうではなく、今後拡張された時にカバレッジが自動で下がるようにするため、静的テスト1つだけ残してパスさせておく
 ![[スクリーンショット 2026-06-01 3.40.35.png]]
+
+
+

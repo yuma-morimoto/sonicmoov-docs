@@ -1,4 +1,3 @@
-# MEASURE-147 【検証】Astro案件の代替テスト手段
 
 - Backlog: [MEASURE-147](https://sonicmoov.backlog.jp/view/MEASURE-147)
 - 状態: 未対応
@@ -7,13 +6,13 @@
 
 ## 課題
 
-- Astro（website-starter-kit）のテスト環境が不十分。
-- Astroコンポーネントテストは技術的な要因で難しく、アコーディオン、スクロール制御などのインタラクションは手動確認に寄っている。
+- マークアップ案件におけるテストが十分に書けていない
+- Astroコンポーネントテストは技術的な要因で難しく、アコーディオン、スクロール制御などのインタラクションは手動確認に寄っている
 
 ## 検証したい仮説
 
-- Astroコンポーネントテストが難しい場合でも、代替案を調査し、実装可能な確認手段を用意できる。
-- uiMatchやVitestによるVRTが、Astro案件のUIテスト・ビジュアル差分検知に有効である。
+- Astroコンポーネントテストが難しい場合でも、代替案を調査し、実装可能な確認手段を用意できる
+- uiMatchやVitestによるVRTが、Astro案件のUIテスト・ビジュアル差分検知に有効である
 
 ## 対象案件
 
@@ -48,9 +47,16 @@
 
 ### コンポーネントテスト代替案の検証
 
-- [ ] Astroコンポーネントテストの代替案調査メモ
-- [ ] 代替案の実装検証結果
+- [ ] Astroコンポーネントにおけるテスト代替案の調査結果
+- [ ] 代替案の検証結果
 
 ### VRTの有効性検証
 
 - [ ] uiMatch / Vitest VRTの有効性検証メモ
+
+## メモ
+- テストガイドラインにはマークアップのテストとしてこの成果物の内容をまとめる予定
+- オッズパーク
+	- Repo: https://github.com/sonicmoov/odds-park-app-webview-mockup
+	- VRT: Playwrightが採用されている
+	- テスト戦略: https://github.com/sonicmoov/odds-park-app-webview-mockup/blob/main/.agents/rules/architecture-testing.md

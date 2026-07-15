@@ -1,3 +1,13 @@
+
+## Todo
+- [ ] [MEASURE-144](https://sonicmoov.backlog.jp/view/MEASURE-144) 【検証】設計フェーズでのテスト計画
+- [ ] [MEASURE-145](https://sonicmoov.backlog.jp/view/MEASURE-145) 【検証】テスト範囲・テストレイヤー判断基準の作成
+- [ ] [MEASURE-146](https://sonicmoov.backlog.jp/view/MEASURE-146) 【検証】AIによるコンポーネント・E2Eテストの有効性（分割済み）
+- [ ] [MEASURE-147](https://sonicmoov.backlog.jp/view/MEASURE-147) 【検証】Astro案件の代替テスト手段
+- [ ] [MEASURE-148](https://sonicmoov.backlog.jp/view/MEASURE-148) 【検証】AIによるテストコード生成
+- [ ] [MEASURE-149](https://sonicmoov.backlog.jp/view/MEASURE-149) 【検証】AIによるマニュアルテストの自動化
+
+## メモ
 - 標準化はウェブアプリとマークアップの2つに分類して行う必要がありそう。
 - 最終的に、ウェブアプリ、マークアップにおいて、テストの考え方（フロントにおけるユニット・統合・E2E等の考え方）、テストコードを書く手順、テスト計画（どこにテストを書くか）、良いテスト・悪いテストなど判断を中心に標準化を行いたい。
 - 最終成果物のガイドライン（マニュアル）はテストそのものの書き方よりもテスト自動化を運用するための知識体系としたい。（ISOのマネジメントシステムの考え方を取り入れる）
@@ -43,9 +53,8 @@
 
 ## 仮説検証
 ### チケット
-- [MEASURE-144](https://sonicmoov.backlog.jp/view/MEASURE-144) 【検証】設計フェーズでのテスト計画
-- [MEASURE-145](https://sonicmoov.backlog.jp/view/MEASURE-145) 【検証】テスト範囲・テストレイヤー判断基準の作成
-- [MEASURE-146](https://sonicmoov.backlog.jp/view/MEASURE-146) 【検証】AIによるコンポーネント・E2Eテストの有効性（分割済み）
-- [MEASURE-147](https://sonicmoov.backlog.jp/view/MEASURE-147) 【検証】Astro案件の代替テスト手段
-- [MEASURE-148](https://sonicmoov.backlog.jp/view/MEASURE-148) 【検証】AIによるテストコード生成
-- [MEASURE-149](https://sonicmoov.backlog.jp/view/MEASURE-149) 【検証】AIによるマニュアルテストの自動化
+- [MEASURE-144](https://sonicmoov.backlog.jp/view/MEASURE-144) 【検証】設計フェーズでのテスト計画 **80%**
+- [MEASURE-145](https://sonicmoov.backlog.jp/view/MEASURE-145) 【検証】テスト範囲・テストレイヤー判断基準の作成 **未着手**
+- [MEASURE-147](https://sonicmoov.backlog.jp/view/MEASURE-147) 【検証】Astro案件の代替テスト手段 **60%**
+- [MEASURE-148](https://sonicmoov.backlog.jp/view/MEASURE-148) 【検証】AIによるテストコード生成 **70%**
+- [MEASURE-149](https://sonicmoov.backlog.jp/view/MEASURE-149) 【検証】AIによるマニュアルテストの自動化 **40%**

@@ -1,4 +1,4 @@
-# MEASURE-148 【検証】AIによるテストコード生成
+
 
 - Backlog: [MEASURE-148](https://sonicmoov.backlog.jp/view/MEASURE-148)
 - 状態: 未対応
