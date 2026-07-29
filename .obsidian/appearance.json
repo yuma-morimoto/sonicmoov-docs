@@ -1,5 +1,7 @@
 {
   "theme": "obsidian",
   "cssTheme": "Typewriter",
-  "translucency": false
+  "translucency": false,
+  "textFontFamily": "Hiragino Sans",
+  "baseFontSize": 14
 }
