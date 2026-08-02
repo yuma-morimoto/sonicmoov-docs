@@ -22,8 +22,18 @@
 	- [web](https://logmi.jp/main/technology/328078) logmi, “フロントエンドの出現”が、フロントエンドテストのターニングポイント　和田氏が語る、「テストは書いて当たり前の時代」までの流れ
 	- [web](https://logmi.jp/main/technology/328087) logmi, 「フロントエンドのテストは“不安定さ・壊れやすさ”との戦い」　和田卓人×倉見洋輔×古川陽介が語る、アクセシビリティの重要性
 	- [web](https://logmi.jp/main/technology/328084) logmi, 「自分たちが考えたモックやスタブは妄想にすぎない」　テスト駆動開発の第一人者が説く、フロントエンドテストの本質
-- [pdf](https://jstqb.jp/dl/JSTQB-SyllabusFoundation_VersionV40.J02.pdf) JSTQB Foundation Level シラバス
-	- 「テスト7原則」読んでおきたい
+- JSTQBシラバス
+	- [pdf](https://jstqb.jp/dl/JSTQB-SyllabusFoundation_VersionV40.J02.pdf) JSTQB Foundation Level シラバス
+		- 「テスト7原則」読んでおきたい
+	- [pdf](https://jstqb.jp/dl/JSTQB-Syllabus.Advanced_TM_Version2012.J04.pdf#page=1.00) JSTQB Advanced Level シラバス 日本語版テストマネージャ
+		- 読んでおきたい
+			- [2.3 リスクベースドテストとその他のテストの優先度付けと工数配分のアプローチ](https://jstqb.jp/dl/JSTQB-Syllabus.Advanced_TM_Version2012.J04.pdf#page=22.52)
+			- [5. テストプロセスの改善](https://jstqb.jp/dl/JSTQB-Syllabus.Advanced_TM_Version2012.J04.pdf#page=59.00)
+			- [6. テストツールおよび自動化](https://jstqb.jp/dl/JSTQB-Syllabus.Advanced_TM_Version2012.J04.pdf#page=64.13)
+- Kent C. Dodds
+	- テストにベストプラクティスは存在しない
+		- https://x.com/kentcdodds/status/977025860921212928?s=20
+	- [Learn the smart, efficient way to test any JavaScript application.](https://www.testingjavascript.com/)
 
 ## テストプロセス
 - テストスクリプトから書き始めるのではなく、何をどうテストするのかから考え始めることが重要である。
@@ -49,11 +59,15 @@ playwright-cli screenshot --output screenshots/cart-top.png --session=pc
 
 
 ## リスクベーステスト
+> GENDA QA勉強会から
 - すべての機能を同じ粒度でテストするのではなく、不具合が起きたときの影響度が高い箇所から優先的にテストする考え方
 - 影響度だけでなく、発生しやすさ・変更頻度・事業上の重要度も合わせて見る
 - フロントエンドでは、決済・申込・認証・ユーザーが必ず通る主要導線などを優先しやすい
 - E2Eテストは実装・保守コストが高いため、リスクが高いシナリオやリグレッション防止の価値が高い箇所に絞る
 - エンジニアだけで判断せず、ディレクターやQA担当者と一緒に「どこが壊れると困るか」を要件定義・キックオフ時点で確認する
+
+## Testing Trophy
+- テスティングトロフィーは「ユーザー行動に近い統合テストを重視するテスト手法」である
 
 ## テスティングトロフィーとフロントテストの関係
 
