@@ -8,7 +8,7 @@
 ## Figma
 - [Figma](https://www.figma.com/board/IO9xxTw3iF6vY7hH8gW9zE/%E3%82%B3%E3%83%B3%E3%83%90%E3%83%86%E3%83%83%E3%82%AF%E3%82%B8%E3%83%A3%E3%83%91%E3%83%B3?node-id=148-555&p=f&t=Xdy3q8hMQ564M5Nc-0)
   
-## 見積もり
+## 見積もりシート
 - [見積もりスプシ](https://docs.google.com/spreadsheets/d/17RvqOtq5g76Ji6zZav9kd44OYwfa6lw0y4GohpptYQI/edit?gid=1120307034#gid=1120307034)
 
 ## 議事録
