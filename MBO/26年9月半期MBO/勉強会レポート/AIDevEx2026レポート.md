@@ -8,22 +8,17 @@
 
 [https://conference.findy-code.io/conferences/ai-devex-con-2026/25/archives/slides](https://conference.findy-code.io/conferences/ai-devex-con-2026/25/archives/slides)
 
-  
+
 
 ## mabl E2Eエージェント
 
 コーディングエージェントとテストエージェント
-
 テストようのエージェント
-
 ユーザーの一連の動作が本当に正しく動くか？をテストする
-
 mablは過去のテストやテスト結果を参照しながら、テストを作成している。
-
 過去のうまくいった部分、うまくいかなった部分を参照する
 
 [https://qiita.com/mfunaki/items/6b21c1673357f8a72a88](https://qiita.com/mfunaki/items/6b21c1673357f8a72a88)
-
 [https://qiita.com/yaboxi_/items/284ae777f25001920b6c](https://qiita.com/yaboxi_/items/284ae777f25001920b6c)
 
 ## t-wada
