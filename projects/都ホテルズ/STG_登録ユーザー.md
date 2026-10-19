@@ -21,9 +21,11 @@ email: y.morimoto+k1@sonicmoov.com
 PW: P@assword1234
 
 Kintetsu-IDアカウント（都プラス会員未連携）
-email:y.morimoto+k2@sonicmoov.com
+email: y.morimoto+k2@sonicmoov.com
 PW: P@ssword1234
 ```
 
 
 mcp emails PW: xqtc brfd eqiv gdgx
+
+
