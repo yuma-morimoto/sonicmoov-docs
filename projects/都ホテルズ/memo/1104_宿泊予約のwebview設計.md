@@ -10,11 +10,12 @@ https://reservation.miyakohotels.ne.jp/booking/result?code=<施設コード>&key
 - 施設コード：Facility list → id（ホテル施設コード）
 - 認証キー：[RC-API(APP)-1-07] → `payload.tripla.access_key`
 
-- `HotelBookingWebViewViewModel` 
-	- -> `build()`, `retry()`
-		- `HotelBookingRepository` 
-			- -> `createBookingUri()`
-				- request: [RC-API(APP)-1-07]
+- `HotelBookingWebViewPage`
+	- `HotelBookingWebViewViewModel` 
+		- -> `build()`, `retry()`
+			- `HotelBookingRepository` 
+				- -> `createBookingUri()`
+					- request: [RC-API(APP)-1-07]
 
 
 
