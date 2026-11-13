@@ -1,6 +1,6 @@
 
 ```
-会員ID: 1112-0000-0007-8523  
+会員ID: 1112-0000-0007-8523
 email: y.morimoto@sonicmoov.com  
 PW: P@assword1234
 
@@ -29,3 +29,4 @@ PW: P@ssword1234
 mcp emails PW: xqtc brfd eqiv gdgx
 
 
+https://reservation.miyakohotels.ne.jp/booking/result?code=2266&key=vB-f3OHhn-z_V4AcgGLiUQ_20261113_105212&utm_source=miyako_plus_app&utm_medium=app
